@@ -1,0 +1,63 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.block {
+  display: flex;
+  border: 1px solid;
+  flex: 1;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.turn-indicator {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.turn-indicator div {
+  border: 1px solid #dadce0;
+  color: #70757a;
+  font-size: 24px;
+  margin: 0;
+  padding: 2px 4px 0;
+  width: 100px;
+  border-radius: 6px;
+}
+
+.turn-indicator div.active {
+  border-bottom-color: #14bdac;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.16);
+}
+
+.winner {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px;
+}
